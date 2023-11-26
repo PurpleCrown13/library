@@ -1,0 +1,103 @@
+.hi{
+    color: var(--text-color);
+}
+
+.user-settings{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px auto;
+    width: 50%;
+}
+
+.big-avatar {
+    margin: 0px auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin-bottom: 30px;
+    border: 1px solid black;
+}
+
+.choose{
+    margin: 0px auto;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+
+.bookmark-sample{
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+.user-bookmarks{
+}
+
+table.GeneratedTable {
+    width: 100%;
+    background-color:  var(--wrp-color);
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: #9567df;
+    border-style: solid;
+    color: var(--text-color);
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+table.GeneratedTable td,
+table.GeneratedTable th {
+    border-width: 2px;
+    border-color: #9567df;
+    border-style: solid;
+    padding: 3px;
+    text-align: center;
+}
+
+table.GeneratedTable thead {
+    background-color: #9567df;
+}
+
+table.GeneratedTable th{
+    color: white;
+}
+table.GeneratedTable td:nth-child(1) {
+    width: 80%;
+}
+
+table.GeneratedTable td:nth-child(2) {
+    width: 20%;
+}
+.delete-bookmark:hover{
+    background-color: crimson;
+    cursor: pointer;
+}
+
+.sry{
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+
+.bookmark-link{
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+
+@media (max-width: 700px) {
+    .big-avatar{
+        width: 80px;
+        height: 80px;
+    }
+    .hi{
+        font-size: 16px;
+    }
+    table.GeneratedTable {
+    margin-bottom: 20px;
+    font-size: 10px;
+    }
+}

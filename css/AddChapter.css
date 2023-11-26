@@ -1,0 +1,63 @@
+.addchapter {
+    color: var(--text-color);
+    width: 100%;
+    
+}
+
+.chapter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    margin: 50px auto;
+}
+
+.space{
+    margin: 20px 0px;
+    font-family: 'Didact Gothic', sans-serif;
+}
+.part-name{
+    background-color: var(--body-color);
+    color: var(--text-color);
+    border: 1px solid transparent;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.chapter-content{
+    background-color: var(--body-color);
+    color: var(--text-color);
+    border: 1px solid transparent;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.select-book{
+    background-color: var(--body-color);
+    color: var(--text-color);
+    border: 1px solid transparent;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+
+.chapter-content {
+    max-height: 500px;
+    overflow-y: auto;
+    color: var(--chapter-color);
+}
+
+
+.chapter-content::-webkit-scrollbar-thumb {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}

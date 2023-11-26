@@ -1,0 +1,12 @@
+.about-site{
+    color: var(--text-color);
+    font-size: 30px;
+    margin: auto auto;
+}
+
+
+@media (max-width: 700px) {
+   .about-site{
+        font-size: 20px;
+   }
+}

@@ -1,0 +1,44 @@
+body {
+  background-color: var(--body-color);
+  font-family: 'Didact Gothic', sans-serif;
+
+}
+
+.wrp {
+  background-color:var(--wrp-color);
+  margin: 40px 120px;
+  min-height: 100vh;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5px;
+}
+
+
+
+
+::-webkit-scrollbar {
+  width: 18px;
+  background-color: var(--body-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #777;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--body-color);
+}
+
+
+@media (max-width: 700px) {
+  .wrp {
+      margin: 10px;
+  }
+}
+
+
+
+

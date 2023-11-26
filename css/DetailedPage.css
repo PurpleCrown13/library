@@ -1,0 +1,412 @@
+.detailed{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--body-color);
+    padding: 20px;
+    color: var(--chapter-color);
+}
+
+.detailed-image{
+    height: 600px;
+    width: 400px;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+.detailed-title{
+    font-size: 30px;
+    
+}
+
+.detailed-author{
+    font-size: 20px;
+}
+
+.detailed-views,.detailed-likes{
+    width: 40px;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.detailed-info{
+    width: 900px;
+}
+
+.detailed-stats{
+    display: flex;
+}
+
+
+
+.tabs{
+    max-height: 500px;
+    overflow-y: auto;
+    color: var(--chapter-color);
+}
+
+
+.tabs::-webkit-scrollbar-thumb {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+
+.ant-tabs .ant-tabs-nav .ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: var(--tab-color);
+}
+
+.ant-tabs .ant-tabs-nav .ant-tabs-tab:hover .ant-tabs-tab-btn {
+    color: var(--tab-color);
+}
+
+.ant-tabs .ant-tabs-ink-bar {
+    background: var(--tab-color) !important;
+    padding: 2px;
+}
+.detailed-buttons{
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.inbookmark{
+    background-color: #fff;
+    text-transform: uppercase;
+    font-family: 'Didact Gothic', sans-serif;
+    border: 1px solid #B8A2D6;
+    width: 170px;
+    padding: 16px;
+    border-radius: 50px;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.inbookmark:hover{
+    background-color: #B8A2D6;
+}
+
+.dropdown-initialized .ant-dropdown-trigger {
+    animation-delay: 0.1s;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.glava{
+    list-style-type: var(--list-starter);
+}
+
+.glava-link{
+    color: var(--text-color);
+}
+
+.glava-link:hover{
+    color: #A57AEB;
+    cursor: pointer;
+}
+
+.detailed-comments {
+    border: 1px solid var(--body-color);
+    margin-top: 20px;
+    min-height: 400px;
+    color: var(--chapter-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.detailed-comments-textarea{
+    width: 1000px;
+    margin-top: 50px;
+    min-height: 200px;
+    resize: vertical;
+    border: 1px solid var(--body-color);
+    padding: 20px;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 20px;
+    outline: none;
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+.detailed-comments-textarea:hover, .detailed-comments-textarea:focus{
+    border: 1px solid var(--text-color);
+}
+
+.send-comment {
+    background-color: #A57AEB;
+    text-transform: uppercase;
+    font-family: 'Didact Gothic', sans-serif;
+    border: none;
+    width: 170px;
+    padding: 6px;
+    font-size: 14px;
+    color: var(--body-color);
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    margin: 50px 0px;
+}
+
+.send-comment:hover {
+    background-color: #B8A2D6;
+    cursor: pointer;
+    color: #000;
+}
+
+.send-comment-container{
+    display: flex;
+    justify-content: center;
+    width: 1040px;
+}
+
+.thread{
+    margin: 50px 0px;
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    border: 1px solid var(--body-color);
+    padding: 20px;
+    flex-direction: column;
+}
+.thread-comment{
+    border: 1px solid var(--body-color);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.thread-image{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    margin-right: 10px;
+    border: 1px solid black;
+}
+
+.thread-title{
+    font-size: 22px;
+}
+
+.thread-top-box{
+    display: flex;
+    align-items: center;
+}
+.thread-content{
+    font-size: 18px;
+    margin: 20px 0px;
+}
+
+.thread-rating{
+    font-size: 20px;
+    margin-left: 10px;
+    color: #A57AEB;
+    font-weight: bold;
+}
+
+
+.like:hover{
+    color: forestgreen;
+    cursor: pointer;
+}
+.dislike:hover {
+    color: crimson;
+    cursor: pointer;
+}
+
+.admin-text {
+    color: #A57AEB;
+}
+
+.thread-delete-container{
+    display: flex;
+    justify-content: right;
+}
+
+.thread-delete{
+    background: #FF0000;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-size: 12px;
+}
+.thread-delete:hover{
+    opacity: 0.7;
+}
+
+@media (max-width: 700px) {
+    .detailed {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .detailed-image {
+        width: 210px;
+        height: 300px;
+        margin: 10px auto;
+    }
+
+    .detailed-title {
+        font-size: 24px;
+    }
+
+    .detailed-author {
+        font-size: 16px;
+    }
+
+    .detailed-views,
+    .detailed-likes {
+        margin-bottom: 10px;
+    }
+
+    .detailed-info {
+        width: 100%;
+    }
+
+    .tabs {
+        max-height: 300px;
+    }
+
+    .detailed-buttons {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px auto;
+    }
+
+    .inbookmark {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        width: 100%;
+        border-radius: 0;
+        margin: 15px 0;
+    }
+
+    .send-comment-container {
+        width: 100%;
+    }
+
+    .thread {
+        width: 70%;
+    }
+
+    .thread-image {
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+    }
+
+    .thread-title {
+        font-size: 18px;
+    }
+
+    .thread-rating {
+        font-size: 16px;
+    }
+
+    .thread-delete {
+        padding: 8px;
+        font-size: 10px;
+    }
+
+    .detailed-comments-textarea {
+        width: 70%;
+        font-size: 12px;
+    }
+
+    .send-comment {
+        width: 80%;
+        margin: 20px 0;
+    }
+}
+
+/* @media (max-width: 1400px) {
+    .detailed {
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    .detailed-image {
+        width: 210px;
+        height: 300px;
+        margin: 10px auto;
+    }
+
+    .detailed-title {
+        font-size: 24px;
+    }
+
+    .detailed-author {
+        font-size: 16px;
+    }
+
+    .detailed-views,
+    .detailed-likes {
+        margin-bottom: 10px;
+    }
+
+    .detailed-info {
+        width: 100%;
+    }
+
+    .tabs {
+        max-height: 300px;
+    }
+
+    .detailed-buttons {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px auto;
+    }
+
+    .inbookmark {
+        padding: 12px;
+        font-size: 16px;
+        width: 40%;
+        border-radius: 0;
+        margin: 15px 0;
+    }
+
+    .send-comment-container {
+        width: 100%;
+    }
+
+    .thread {
+        width: 70%;
+    }
+
+    .thread-image {
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+    }
+
+    .thread-title {
+        font-size: 18px;
+    }
+
+    .thread-rating {
+        font-size: 16px;
+    }
+
+    .thread-delete {
+        padding: 8px;
+        font-size: 10px;
+    }
+
+    .detailed-comments-textarea {
+        width: 70%;
+        font-size: 12px;
+    }
+
+    .send-comment {
+        width: 80%;
+        margin: 20px 0;
+    }
+} */

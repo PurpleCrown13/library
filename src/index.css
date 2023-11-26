@@ -1,0 +1,28 @@
+.light-mode {
+    --wrp-color: #ffffff;
+    --text-color: #000000;
+    --body-color: #E2E2E2;
+    --icon-hover-color: #555;
+    --show-color: #4b83c8;
+    --tags-color: #777;
+    --links-color: #7324f2;
+    --chapter-color: #000;
+    --tab-color: #A57AEB;
+    --list-starter:  "◾";
+    --searched-books: "🔶";
+}
+
+.dark-mode {
+    --body-color: #1C1C1C;
+    --wrp-color: #474747;
+    --text-color: #ffffff;
+    --icon-hover-color: #333;
+    --show-color: #fff;
+    --tags-color: #fff;
+    --links-color: #8c7ea7;
+    --chapter-color: #CCC;
+    --tab-color: #bcacd8;
+    --list-starter: "◽";
+    --searched-books: "🔶";
+}
+
